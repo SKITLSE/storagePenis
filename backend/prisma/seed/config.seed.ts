@@ -26,6 +26,18 @@ const configVariables: ConfigVariables = {
       secret: false,
     },
   },
+  account: {
+    allowRegistration: {
+      type: "boolean",
+      defaultValue: "true",
+      secret: false,
+    },
+    passwordSignIn: {
+      type: "boolean",
+      defaultValue: "true",
+      secret: false,
+    },
+  },
   share: {
     allowRegistration: {
       type: "boolean",
@@ -132,6 +144,11 @@ const configVariables: ConfigVariables = {
     "ignoreTotp": {
       type: "boolean",
       defaultValue: "true",
+    },
+    "autoRedirect": {
+      type: "string",
+      defaultValue: "",
+      secret: false,
     },
     "github-enabled": {
       type: "boolean",
